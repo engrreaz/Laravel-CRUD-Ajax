@@ -47,7 +47,7 @@
 
                             <!-- Modal Header -->
                             <div class="modal-header">
-                                <h4 class="modal-title">Modal Heading</h4>
+                                <h4 class="modal-title">Add/Edit Product</h4>
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
 
@@ -55,7 +55,7 @@
                             <div class="modal-body">
                                 <form id="ajaxForm">
 
-                                    <input id="idno" name="idno" /><br>
+                                    <input type="hidden" id="idno" name="idno" /><br>
                                     <div class="form-group">
                                         <label for="name">Product Name:</label>
                                         <input type="text" class="form-control" value="Console"
