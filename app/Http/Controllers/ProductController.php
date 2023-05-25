@@ -79,7 +79,6 @@ class ProductController extends Controller
                 return response()->json([
                     'status' => 'Nothing Found'], 201);
             }
-
     }
 
 }

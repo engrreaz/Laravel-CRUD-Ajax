@@ -28,7 +28,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-
+// ROUTE for CRUD
 Route::get('/product/list', [ProductController::class, 'display'])->name('product.display');
 Route::post('/product/store', [ProductController::class, 'store'])->name('product.store');
 Route::post('/product/delete', [ProductController::class, 'delete'])->name('product.delete');
