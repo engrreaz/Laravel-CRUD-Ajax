@@ -1,4 +1,4 @@
-name: Deploy Private GitHub repository to cPanel-xeneen
+name: Deploy to Xeneen
 on:
   push:
     branches:
@@ -12,7 +12,7 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 2
+          fetch-depth: 7
       - name: 📂 Sync folders and files to the server
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
