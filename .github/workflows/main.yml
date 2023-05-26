@@ -12,7 +12,7 @@ jobs:
       - name: Get latest code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 7
+          fetch-depth: 2
       - name: Sync folders and files to the server
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
