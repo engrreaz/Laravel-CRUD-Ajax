@@ -1,19 +1,19 @@
-name: Deploy to Xeneen
+pname: Deploy to Xeneen
 on:
   push:
     branches:
       - master
 jobs:
   FTP-Deploy-Action:
-    name: 🎉 Deploy
+    name: Deploy
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🚚 Get latest code
+      - name: Get latest code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 7
-      - name: 📂 Sync folders and files to the server
+          fetch-depth: 2
+      - name: Sync folders and files to the server
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.FTP_SERVER }}
