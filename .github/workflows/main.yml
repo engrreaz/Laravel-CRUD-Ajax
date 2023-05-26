@@ -1,4 +1,4 @@
-pname: Deploy to Xeneen
+name: Deploy to Xeneen
 on:
   push:
     branches:
