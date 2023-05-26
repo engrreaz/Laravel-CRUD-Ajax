@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/xeneen/git
-    - /bin/cp -R images $DEPLOYPATH
