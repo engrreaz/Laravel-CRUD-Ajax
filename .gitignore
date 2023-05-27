@@ -16,3 +16,11 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+test/*
+storage/*
+routes/*
+resources/*
+database/*.*
+config/*.*
+bootstrap/*.*
+app/*.*
